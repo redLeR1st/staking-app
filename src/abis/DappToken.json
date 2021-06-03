@@ -4952,6 +4952,63 @@
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "_owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "_spender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event"
+        },
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xF439cD25Ee67Fdd379B786D584D1fe41E16b8B0E",
+      "transactionHash": "0x088831af6502ddade7e4a235767835e36c903de7bff36adf127ab7a704c54499"
+    },
     "5777": {
       "events": {
         "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
@@ -5006,12 +5063,12 @@
         }
       },
       "links": {},
-      "address": "0x602b44f41F240A9e2Abf0221FFAf278B60e6feB9",
-      "transactionHash": "0x60e87463412c1b915d9e171e7cf8b9467d00c340868104c87ab3cc2ced364493"
+      "address": "0x74b218237a1AdBB49C75CF4A3D88C1f0be4DE29e",
+      "transactionHash": "0x7e58b0eae0e7c9e0b3767c677cc07f24ce0a585b25b6efdbd8a6b5a517d5af46"
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2021-06-02T13:42:52.981Z",
+  "updatedAt": "2021-06-03T13:43:49.025Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
