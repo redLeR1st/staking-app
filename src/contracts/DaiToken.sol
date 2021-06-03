@@ -25,6 +25,8 @@ contract DaiToken {
         balanceOf[msg.sender] = totalSupply;
     }
 
+
+    // Calledn any time when the token holder spend their token
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balanceOf[msg.sender] >= _value);
         balanceOf[msg.sender] -= _value;
@@ -33,12 +35,16 @@ contract DaiToken {
         return true;
     }
 
+
+    // we have to approve firs of all
     function approve(address _spender, uint256 _value) public returns (bool success) {
         allowance[msg.sender][_spender] = _value;
         emit Approval(msg.sender, _spender, _value);
         return true;
     }
 
+
+    // somebody els transfer token for the holder for example a smart contract
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
         require(_value <= balanceOf[_from]);
         require(_value <= allowance[_from][msg.sender]);

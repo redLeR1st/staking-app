@@ -1,1 +1,16 @@
 /* Styles go here */
+body {
+    background-color: #495057;
+}
+#account {
+    font-size: 130%;
+    color: aqua;
+}
+
+thead {
+    color: lightgray;
+}
+
+tbody {
+    color: lightgray;
+}

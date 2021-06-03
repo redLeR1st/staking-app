@@ -5,6 +5,8 @@ contract DappToken {
     string  public symbol = "DAPP";
     uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8   public decimals = 18;
+    
+    // 1000000000000000000 // This is how 1DAPP token looks like 1 then 18 zeroz
 
     event Transfer(
         address indexed _from,
@@ -26,7 +28,7 @@ contract DappToken {
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
-        require(balanceOf[msg.sender] >= _value);
+        require(balanceOf[msg.sender] >= _value, "NOT ENOUGHT BALANCE");
         balanceOf[msg.sender] -= _value;
         balanceOf[_to] += _value;
         emit Transfer(msg.sender, _to, _value);
